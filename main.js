@@ -6,7 +6,7 @@ const vanGoghsEar = [{
     biography:
     `To describe Van Gogh’s Ear as simply a jazz group would be to commit 
     an egregious disservice to what VGE actually is. Less a band and more 
-    an esoteric thinktank, VGE has found its niche within the vast and 
+    an esoteric think-tank, VGE has found its niche within the vast and 
     inundated music scene of Nashville. And while jazz may not be the first 
     musical style to come to mind when one thinks of Nashville, VGE is changing 
     that, and at a rapid pace.<br>
