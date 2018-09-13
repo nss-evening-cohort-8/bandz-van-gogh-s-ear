@@ -2,10 +2,12 @@ console.log("I am linked");
 
 const printToDom = (divId, stringToPrint) => {
     let divhook = document.getElementById(divId);
-    divhook.innerHTML = stringToPrint;
+    if (divhook !== null) {
+        divhook.innerHTML = stringToPrint; 
+    }
 };
 
-// printToDom('band-name', 'Print to Dom function works');
+printToDom('band-name', 'Print to Dom function works');
 
 // TOUR PAGE ARRAY 
 
@@ -19,21 +21,21 @@ let tourDates = [
     },
     {
         festival: 'Jazz à Vienne',        
-        date: 'tomorrow',
-        location: 'Birmingham',
-        venue: 'Home',
-        tickets: 'sold out'
+        date: 'June 28 2019',
+        location: 'Vienne, Isère, France',
+        venue: 'The Antique Theater',
+        tickets: 'https://www.jazzavienne.com/en/ticketing'
     },
     {
         festival: 'Montreux Jazz Festival',                
-        date: 'yesterday',
+        date: 'June 29 2019',
         location: 'Jersey City',
-        venue: 'Home',
-        tickets: 'sold out'
+        venue: 'Montreux Jazz Lab',
+        tickets: 'https://www.montreuxjazzfestival.com/en/programl'
     },
     {
         festival: 'Django Reinhardt Festival',                
-        date: 'yesterday',
+        date: 'July 2 2019',
         location: 'Jersey City',
         venue: 'Home',
         tickets: 'sold out'
@@ -89,10 +91,11 @@ const tourStringBuilder = () => {
         newString += `<h2>${tourDates[i].date}</h2>`;
         newString += `<h2>${tourDates[i].location}</h2>`;
         newString += `<h3>${tourDates[i].venue}</h3>`;
-        newString += `<h3>${tourDates[i].tickets}</h3>`;
+        newString += `<a href="${tourDates[i].tickets}" target="_blank"><button>Tickets</button></a>`;
     }
     printToDom('tour-dates', newString);
 };
 
 tourStringBuilder();
+
 
