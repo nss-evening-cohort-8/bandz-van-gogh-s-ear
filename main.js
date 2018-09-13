@@ -2,6 +2,7 @@
 const vanGoghsEar = [{
     name: "Van Gogh's Ear",
     type: "Nashville Jazz Collective",
+    image: "https://onerecordperday.files.wordpress.com/2013/02/day48-plot.jpg",
     biography:
     `To describe Van Gogh’s Ear as simply a jazz group would be to commit 
     an egregious disservice to what VGE actually is. Less a band and more 
@@ -46,6 +47,7 @@ let biographyStringBuilder = () => {
         newString +=`<div class="band">`;
         newString +=    `<h1>${vanGoghsEar[i].name}</h1>`;
         newString +=    `<h3>${vanGoghsEar[i].type}</h3>`;
+        newString +=    `<img src="${vanGoghsEar[i].image}"></img>`;
         newString +=    `<p>${vanGoghsEar[i].biography}</p>`;
         newString +=`</div>`;
     }
