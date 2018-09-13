@@ -75,4 +75,9 @@ const discography = [
 
 const discoArrKeys = Object.keys(discography[0]);
 
+const discoBuilder = () => {
+    let newString= '';
+    
+}
+
 console.log(discoArrKeys);
