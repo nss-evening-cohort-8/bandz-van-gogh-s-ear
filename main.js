@@ -5,28 +5,94 @@ const printToDom = (divId, stringToPrint) => {
     divhook.innerHTML = stringToPrint;
 };
 
-printToDom('band-name', 'Print to Dom function works');
+// printToDom('band-name', 'Print to Dom function works');
 
-// TOUR PAGE OBJECT 
+// TOUR PAGE ARRAY 
 
-let tourDates = {
-    date: ["September 11 2018", "September 12 2018", "September 13 2018"],
-    location: ["Los Angelos", "Nashville", "Atlanta"],
-    venue: ["Staples Center", "Georgia Dome", "Mercedes Benz Stadium" ],
-    tickets: ["SOLD OUT", "Staples Center", "Staples Center"]
-};
+let tourDates = [
+    {
+        festival: 'Wicked Jazz Sounds Festival',
+        date: 'June 24 2019',
+        location: 'Amsterdam, Netherlands',
+        venue: 'NDSM Docklands',
+        tickets: 'http://wickedjazzsoundsfestival.com/'
+    },
+    {
+        festival: 'Jazz à Vienne',        
+        date: 'tomorrow',
+        location: 'Birmingham',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Montreux Jazz Festival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Django Reinhardt Festival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Gent Jazz Festival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Love Supreme Jazz Festival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'North Sea Jazz Festival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Umbria Jazz',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Jazz Middelheim',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+    {
+        festival: 'Oslo Jazzfestival',                
+        date: 'yesterday',
+        location: 'Jersey City',
+        venue: 'Home',
+        tickets: 'sold out'
+    },
+];
 
 const tourStringBuilder = () => {
-    let theString = ''; 
+    let newString = '';
     for (let i = 0; i < tourDates.length; i++) {
-        theString += `<div class="tour-styling">`
-        theString += `<h2>${tourDates.[i]date</h2>`;
-        theString += `<h2>${tourDates.[i]location}</h2>`;
-        theString += `<h2>${tourDates.[i]venue}</h2>`;
-        theString += `<h2>${tourDates.[i]tickets}</h2>`;
-        theString += `</div>`;
+        newString += `<h1>${tourDates[i].festival}</h1>`;
+        newString += `<h2>${tourDates[i].date}</h2>`;
+        newString += `<h2>${tourDates[i].location}</h2>`;
+        newString += `<h3>${tourDates[i].venue}</h3>`;
+        newString += `<h3>${tourDates[i].tickets}</h3>`;
     }
-    printToDom("tour-dates", theString);
+    printToDom('tour-dates', newString);
 };
 
 tourStringBuilder();
+
