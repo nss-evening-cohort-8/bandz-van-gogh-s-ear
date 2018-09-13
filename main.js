@@ -72,7 +72,7 @@ const discography = [
         ]
     }
 ]
-    
-    
 
-console.log(discography[1].songs[4]);
+const discoArrKeys = Object.keys(discography[0]);
+
+console.log(discoArrKeys);
