@@ -9,7 +9,7 @@ const printToDom = (divId, stringToPrint) => {
 
 printToDom('band-name', 'Print to Dom function works');
 
-// TOUR PAGE ARRAY 
+// TOUR PAGE ARRAY
 
 let tourDates = [
     {
@@ -36,7 +36,7 @@ let tourDates = [
     {
         festival: 'Django Reinhardt Festival',                
         date: 'July 2 2019',
-        location: 'Jersey City',
+        location: 'Samois-sur-Seine, France',
         venue: 'Home',
         tickets: 'sold out'
     },
