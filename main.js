@@ -55,7 +55,7 @@ let biographyStringBuilder = () => {
     printToDom(newString, "main-content");
 };
 
-biographyStringBuilder();
+//biographyStringBuilder();
 
 // Start discography object
 const discography = [
@@ -93,9 +93,9 @@ const discography = [
     },
     {
         art: 'https://www.getdigital.eu/web/getdigital/gfx/products/__generated__resized/1100x1100/helloworld_poster.jpg',
-        albums: 'Int Main ()',
+        albums: 'Hello World',
         songs: [
-            'Bear Stix',
+            'Int Main ()',
             'Broadway Women',
             'Midnight at Steak n Shake',
             'Street Pharmacist',
@@ -120,7 +120,7 @@ const discography = [
             '11 PM on a Friday Night',
             'Drum solo',
             'TI-2000',
-            'Coda'
+            'Van Gogh\'s Ear Forever'
         ]
     }
 ]
@@ -128,14 +128,21 @@ const discography = [
 const discoArrKeys = Object.keys(discography[0]);
 
 const discoBuilder = () => {
-    let newString= '';
+    let newString= ``;
     for (i = 0; i < discography.length; i++) {
-        newString += '<div class="band-albums">';
-        for (j = 0; j < discoArrKeys.length; j++) {
-            
+        newString += `<div class="band-albums">`;
+        newString += `  <img src="${discography[i].art}"></img>`;
+        newString += `  <h3 class="album-title">${discography[i].albums}</h3>`;
+        newString += `  <ol class="songs-list">`;
+        for (j = 0; j < discography[i].songs.length; j++) {
+            newString += `      <li>${discography[i].songs[j]}</li>`;
         }
+        newString += `  </ol>`;
+        newString += `</div>`;
     }
-    
+    printToDom(newString, 'discorgaphy-hook');
 }
+
+discoBuilder();
 
 console.log(discoArrKeys);
