@@ -36,12 +36,16 @@ const vanGoghsEar = [{
     tour dates to find them at a venue near you!`
 }];
 
+
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
+    if (selectedDiv !== null) {
     selectedDiv.innerHTML = stringToPrint;
+} 
 };
 
 //Start Biography page
+
 let biographyStringBuilder = () => {
     let newString = '';
     for (let i=0; i<vanGoghsEar.length; i++) {
@@ -54,6 +58,106 @@ let biographyStringBuilder = () => {
     }
     printToDom(newString, "main-content");
 };
+
+
+biographyStringBuilder();
+
+
+printToDom('band-name', 'Print to Dom function works');
+
+// TOUR PAGE ARRAY
+
+let tourDates = [
+    {
+        festival: 'Wicked Jazz Sounds Festival',
+        date: 'June 24 2019',
+        location: 'Amsterdam, Netherlands',
+        venue: 'NDSM Docklands',
+        tickets: 'http://wickedjazzsoundsfestival.com/'
+    },
+    {
+        festival: 'Jazz à Vienne',        
+        date: 'June 28 2019',
+        location: 'Vienne, Isère, France',
+        venue: 'The Antique Theater',
+        tickets: 'https://www.jazzavienne.com/en/ticketing'
+    },
+    {
+        festival: 'Montreux Jazz Festival',                
+        date: 'June 29 2019',
+        location: 'Jersey City',
+        venue: 'Montreux Jazz Lab',
+        tickets: 'https://www.montreuxjazzfestival.com/en/programl'
+    },
+    {
+        festival: 'Django Reinhardt Festival',                
+        date: 'July 2 2019',
+        location: 'Samois-sur-Seine, France',
+        venue: 'Fontainebleau, France',
+        tickets: 'http://www.festivaldjangoreinhardt.com/en/ticket-office/'
+    },
+    {
+        festival: 'Gent Jazz Festival',                
+        date: 'July 5 2019',
+        location: 'Ghent, Belgium',
+        venue: 'Godshuizenlaan',
+        tickets: 'https://gentjazz.com/en/tickets'
+    },
+    {
+        festival: 'Love Supreme Jazz Festival',                
+        date: 'July 7 2019',
+        location: 'Glynde Place, Glynde, United Kingdom',
+        venue: 'Main Stage',
+        tickets: 'https://lovesupremefestival.com/tickets#YPPIf0I2RcbOXsdY.97'
+    },
+    {
+        festival: 'North Sea Jazz Festival',                
+        date: 'July 13 2019',
+        location: 'Ahoy Rotterdam, Rotterdam, Netherlands',
+        venue: 'Ahoy Venue',
+        tickets: 'https://www.northseajazz.com/en/tickets/tickets-2019/'
+    },
+    {
+        festival: 'Umbria Jazz',                
+        date: 'July 20 2019',
+        location: 'Perugia, Italy',
+        venue: 'Main Stage',
+        tickets: 'http://www.umbriajazz.com/pagine/tickets'
+    },
+    {
+        festival: 'Jazz Middelheim',                
+        date: 'August 9 2019',
+        location: 'Antwerp, Belgium',
+        venue: 'Main Stage',
+        tickets: 'https://jazzmiddelheim.be/nl/tickets'
+    },
+    {
+        festival: 'Oslo Jazzfestival',                
+        date: 'August 14 2019',
+        location: 'Oslo, Norway',
+        venue: 'Main Stage',
+        tickets: 'https://oslojazz.no/'
+    },
+];
+
+const tourStringBuilder = () => {
+    let newString = '';
+    for (let i = 0; i < tourDates.length; i++) {
+        newString += `<div class="tour-container">`;
+        newString += `<h1>${tourDates[i].festival}</h1>`;
+        newString += `<h2>${tourDates[i].date}</h2>`;
+        newString += `<h2>${tourDates[i].location}</h2>`;
+        newString += `<h3>${tourDates[i].venue}</h3>`;
+        newString += `<a href="${tourDates[i].tickets}" target="_blank"><button>Tickets</button></a>`;
+        newString += `</div>`;
+    }
+    printToDom(newString, 'tour-dates');
+};
+
+tourStringBuilder();
+
+
+
 
 //biographyStringBuilder();
 
@@ -146,3 +250,4 @@ const discoBuilder = () => {
 discoBuilder();
 
 console.log(discoArrKeys);
+
