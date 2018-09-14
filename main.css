@@ -4,18 +4,30 @@
 
 body {
     background-color: #040404;
-    color: #cfe9f6;
 }
-
 
 #main-content {
     background-image: url('pics/skyline.png');
-    height: 800px;
+    height: 1100px;
 }
 
-#lower-content {
-    background-color: #cfe9f6;
-    height: 900px;
+.band > h1 {
+    color: #264d76;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4.5em;
+    padding-top: 550px;
+    padding-left: 100px;
+}
+
+.band > h3 {
+    color: #cfe9f6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 100px;
+    font-size: 2.5em;
+}
+
+.band > p {
+    color: #cfe9f6;
 }
 
 
