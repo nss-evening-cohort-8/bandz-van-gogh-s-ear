@@ -231,13 +231,15 @@ const discoBuilder = () => {
     for (i = 0; i < discography.length; i++) {
         newString += `<div class="band-albums">`;
         newString += `  <img src="${discography[i].art}"></img>`;
-        newString += `  <h3 class="album-title">${discography[i].albums}</h3>`;
-        newString += `  <ol class="songs-list">`;
+        newString += `  <div class="disc-text-content"`
+        newString += `      <h3 class="album-title">${discography[i].albums}</h3>`;
+        newString += `      <ol class="songs-list">`;
         //Loops through each song within an album's song array
         for (j = 0; j < discography[i].songs.length; j++) {
-            newString += `      <li>${discography[i].songs[j]}</li>`;
+            newString += `          <li>${discography[i].songs[j]}</li>`;
         }
-        newString += `  </ol>`;
+        newString += `      </ol>`;
+        newString += `  </div>`
         newString += `</div>`;
     }
     printToDom(newString, 'discorgaphy-hook');
