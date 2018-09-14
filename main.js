@@ -41,17 +41,27 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-let biographyStringBuilder = () => {
+const upperBioStringBuilder = () => {
     let newString = '';
     for (let i=0; i<vanGoghsEar.length; i++) {
         newString +=`<div class="band">`;
         newString +=    `<h1>${vanGoghsEar[i].name}</h1>`;
         newString +=    `<h3>${vanGoghsEar[i].type}</h3>`;
-        newString +=    `<img src="${vanGoghsEar[i].image}"></img>`;
-        newString +=    `<p>${vanGoghsEar[i].biography}</p>`;
         newString +=`</div>`;
     }
     printToDom(newString, "main-content");
 };
 
-biographyStringBuilder();
+const lowerBioStringBuilder = () => {
+    let newString = '';
+    for (let i=0; i<vanGoghsEar.length; i++) {
+        newString += `<div class="bio>`;
+        newString +=    `<img src="${vanGoghsEar[i].image}"></img>`;
+        newString +=    `<p>${vanGoghsEar[i].biography}</p>`;
+        newString += `</div>`;
+    }
+    printToDom(newString, "lower-content");
+};
+
+upperBioStringBuilder();
+lowerBioStringBuilder();

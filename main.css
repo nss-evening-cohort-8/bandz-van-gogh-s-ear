@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #242225;
-    color: whitesmoke;
+    background-color: #040404;
+    color: #cfe9f6;
 }
 
 .nav-bar {
@@ -13,7 +13,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #293273;
+    background-color: #264d76;
     margin: 0 auto;
     height: 45px;
     border: 1px solid black;
@@ -46,6 +46,14 @@ body {
     color: #718daa;
 }
 
+#main-content {
+    background-image: url('pics/skyline.png');
+}
+
+#lower-content {
+    background-color: #cfe9f6;
+}
+
 .footer {
     display: flex;
     position: fixed;
@@ -53,9 +61,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #293273;
-    color: whitesmoke;
+    background-color: #264d76;
+    color: #cfe9f6;
     text-align: center;
     height: 45px;
     align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
