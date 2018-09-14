@@ -38,7 +38,7 @@ let tourDates = [
         date: 'July 2 2019',
         location: 'Samois-sur-Seine, France',
         venue: 'Home',
-        tickets: 'sold out'
+        tickets: 'http://www.festivaldjangoreinhardt.com/en/ticket-office/'
     },
     {
         festival: 'Gent Jazz Festival',                
