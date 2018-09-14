@@ -143,11 +143,13 @@ let tourDates = [
 const tourStringBuilder = () => {
     let newString = '';
     for (let i = 0; i < tourDates.length; i++) {
+        newString += `<div class="tour-container">`;
         newString += `<h1>${tourDates[i].festival}</h1>`;
         newString += `<h2>${tourDates[i].date}</h2>`;
         newString += `<h2>${tourDates[i].location}</h2>`;
         newString += `<h3>${tourDates[i].venue}</h3>`;
         newString += `<a href="${tourDates[i].tickets}" target="_blank"><button>Tickets</button></a>`;
+        newString += `</div>`;
     }
     printToDom(newString, 'tour-dates');
 };
