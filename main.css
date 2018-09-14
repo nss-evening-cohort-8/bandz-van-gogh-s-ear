@@ -3,8 +3,53 @@
 }
 
 body {
-    background-color: #242225;
-    color: whitesmoke;
+    background-color: #040404;
+    color: #cfe9f6;
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-content {
+    background-image: url('pics/skyline.png');
+    height: 1300px;
+    margin: 0 auto;
+}
+
+.band > h1 {
+    color: #264d76;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4.5em;
+    padding-top: 550px;
+    padding-left: 100px;
+}
+
+.band > h3 {
+    color: #cfe9f6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 100px;
+    font-size: 2.5em;
+    padding-bottom: 30px;
+}
+
+.bio {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #cfe9f6;
+    color: #040404;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.bio p {
+    width: 700px;
+    padding: 30px;
+}
+
+.band-photo {
+    width: 600px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 500px;
 }
 
 .nav-bar {
@@ -13,12 +58,18 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #293273;
+    background-color: #264d76;
     margin: 0 auto;
     height: 45px;
     border: 1px solid black;
     box-shadow: 8px 5px 4px rgba(0, 8, 5, 0.7);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#logo {
+    height: 35px;
+    width: 35px;
+    padding-left: 100px;
 }
 
 .nav-links {
@@ -53,9 +104,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #293273;
-    color: whitesmoke;
+    background-color: #264d76;
+    color: #cfe9f6;
     text-align: center;
     height: 45px;
     align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
