@@ -59,3 +59,11 @@ body {
     height: 45px;
     align-items: center;
 }
+
+.songs-list {
+    display: none; 
+}
+
+.band-albums:hover .songs-list {
+    display: inherit;
+}

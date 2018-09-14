@@ -38,7 +38,9 @@ const vanGoghsEar = [{
 
 const printToDom = (stringToPrint, divId) => {
     const selectedDiv = document.getElementById(divId);
-    selectedDiv.innerHTML = stringToPrint;
+    if (selectedDiv !== null) {
+        selectedDiv.innerHTML = stringToPrint;
+    }
 };
 
 //Start Biography page
@@ -55,7 +57,7 @@ let biographyStringBuilder = () => {
     printToDom(newString, "main-content");
 };
 
-//biographyStringBuilder();
+biographyStringBuilder();
 
 // Start discography object
 const discography = [
@@ -129,11 +131,13 @@ const discoArrKeys = Object.keys(discography[0]);
 
 const discoBuilder = () => {
     let newString= ``;
+    //Loops through each album object in the total array
     for (i = 0; i < discography.length; i++) {
         newString += `<div class="band-albums">`;
         newString += `  <img src="${discography[i].art}"></img>`;
         newString += `  <h3 class="album-title">${discography[i].albums}</h3>`;
         newString += `  <ol class="songs-list">`;
+        //Loops through each song within an album's song array
         for (j = 0; j < discography[i].songs.length; j++) {
             newString += `      <li>${discography[i].songs[j]}</li>`;
         }
@@ -142,7 +146,7 @@ const discoBuilder = () => {
     }
     printToDom(newString, 'discorgaphy-hook');
 }
-
+//prints discography to DOM
 discoBuilder();
 
 console.log(discoArrKeys);
