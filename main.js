@@ -89,36 +89,36 @@ let tourDates = [
         festival: 'Django Reinhardt Festival',                
         date: 'July 2 2019',
         location: 'Samois-sur-Seine, France',
-        venue: 'Home',
+        venue: 'Fontainebleau, France',
         tickets: 'http://www.festivaldjangoreinhardt.com/en/ticket-office/'
     },
     {
         festival: 'Gent Jazz Festival',                
-        date: 'yesterday',
-        location: 'Jersey City',
-        venue: 'Home',
-        tickets: 'sold out'
+        date: 'July 5 2019',
+        location: 'Ghent, Belgium',
+        venue: 'Godshuizenlaan',
+        tickets: 'https://gentjazz.com/en/tickets'
     },
     {
         festival: 'Love Supreme Jazz Festival',                
-        date: 'yesterday',
-        location: 'Jersey City',
-        venue: 'Home',
-        tickets: 'sold out'
+        date: 'July 7 2019',
+        location: 'Glynde Place, Glynde, United Kingdom',
+        venue: 'Main Stage',
+        tickets: 'https://lovesupremefestival.com/tickets#YPPIf0I2RcbOXsdY.97'
     },
     {
         festival: 'North Sea Jazz Festival',                
-        date: 'yesterday',
-        location: 'Jersey City',
-        venue: 'Home',
-        tickets: 'sold out'
+        date: 'July 13 2019',
+        location: 'Ahoy Rotterdam, Rotterdam, Netherlands',
+        venue: 'Ahoy Venue',
+        tickets: 'https://www.northseajazz.com/en/tickets/tickets-2019/'
     },
     {
         festival: 'Umbria Jazz',                
         date: 'yesterday',
-        location: 'Jersey City',
+        location: 'Perugia, Italy',
         venue: 'Home',
-        tickets: 'sold out'
+        tickets: 'http://www.umbriajazz.com/pagine/tickets'
     },
     {
         festival: 'Jazz Middelheim',                
