@@ -59,3 +59,30 @@ body {
     height: 45px;
     align-items: center;
 }
+
+
+/* TOUR PAGE STYLING START */
+
+.tour-h1 {
+    margin-left: 35px;
+}
+
+.tour-container {
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 25px;
+}
+
+.tour-container a:hover button {
+    background-color: #CFE9F6;
+}
+
+
+/* TOUR PAGE STYLING END */
