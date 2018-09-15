@@ -228,7 +228,7 @@ const discoBuilder = () => {
         newString += `  <img src="${discography[i].art}"></img>`;
         newString += `  <div class="disc-text-content"`
         newString += `      <h3 class="album-title">${discography[i].albums}</h3>`;
-        newString += `      <ol class="songs-list">`;
+        newString += `      <ol class="songs-list" id="${discography[i].songs[1]}">`;
         //Loops through each song within an album's song array
         for (j = 0; j < discography[i].songs.length; j++) {
             newString += `          <li>${discography[i].songs[j]}</li>`;

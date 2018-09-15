@@ -135,9 +135,13 @@ body {
     height: 0;
     opacity: 0;
     /* transition: height 1s, opacity 1s ease-out; */
+    transition: height 1s, opacity 1s ease-out;
+    -webkit-transition: height 1s, opacity 1s ease-out;
+    -moz-transition: height 1s, opacity 1s ease-out;
+    -o-transition: height 1s, opacity 1s ease-out;
 }
 
-.band-albums:hover .songs-list li {
+.band-albums:target .songs-list li {
     visibility: visible;
     height: 20px;
     opacity: 1;
