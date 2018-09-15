@@ -66,25 +66,74 @@ const bandMembers = [
     {
         name: "Dylan",
         instrument: "Blues Harp / Scat Vocals",
-        bio: "xxxxxx",
+        bio: `Colin, hails from LA no not Los Angeles, but Louisiana.  
+        Raised on Mississippi Delta Blues, and Dixie Land Jazz he had 
+        a deep longing to express himself through music.  At age 5, his 
+        parents bought him his first drum kit from Sears & Roebuck that 
+        was guaranteed not to break.  Playing to old blues records, he 
+        honed his skill.  Working at his father's crawdad farm, he 
+        scrimped and saved to by a proper drum kit.  Working and 
+        practicing, practicing and working, he became a drumming force 
+        to be reckoned with and saved enough money to relocate to 
+        Nashville, TN.  With $357.87 in his pocket and a dream in his 
+        heart, he set out on a journey that would forever change his life. 
+        By pure chance, or providence, he bumped into 3 other musicians 
+        at a coffee house also with a dream.  Striking up a conversation 
+        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Dylan.jpg"
     },
     {
         name: "Colin",
         instrument: "Drum Kit",
-        bio: "xxxxxx",
+        bio: `Colin, hails from LA. No, not Los Angeles, but Louisiana.  
+        Raised on Mississippi Delta Blues, and Dixie Land Jazz he had 
+        a deep longing to express himself through music.  At age 5, his 
+        parents bought him his first drum kit from Sears & Roebuck that 
+        was guaranteed not to break.  Playing to old blues records, he 
+        honed his skill.  Working at his father's crawdad farm, he 
+        scrimped and saved to by a proper drum kit.  Working and 
+        practicing, practicing and working, he became a drumming force 
+        to be reckoned with and saved enough money to relocate to 
+        Nashville, TN.  With $357.87 in his pocket and a dream in his 
+        heart, he set out on a journey that would forever change his life. 
+        By pure chance, or providence, he bumped into 3 other musicians 
+        at a coffee house also with a dream.  Striking up a conversation 
+        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Colin.jpg"
     },
     {
         name: "Charles",
         instrument: "Bass",
-        bio: "xxxxxx",
+        bio: `Charles Woodring, aka: “The Professor”,  is one of 
+        five people in history to have received a Nobel Peace Prize, 
+        both in recognition of his ground-breaking contributions to the 
+        field of kymatology, the study of waves. Having built a 
+        reputation for himself in the science community, he now endeavors 
+        to win a third Nobel Peace Prize, but this time for song-writing. 
+        And so Charles found 3 likeminded individuals to help spearhead the 
+        musical experience that is Van Gogh’s Ear.`,
         img: "./pics/Charles.jpg"
     },
     {
         name: "Marshall",
-        instrument: "Saxaphone",
-        bio: "xxxxxx",
+        instrument: "Saxophone",
+        bio: `Colin, hails from LA no not Los Angeles, but Louisiana.  
+        Raised on Mississippi Delta Blues, and Dixie Land Jazz he had 
+        a deep longing to express himself through music.  At age 5, his 
+        parents bought him his first drum kit from Sears & Roebuck that 
+        was guaranteed not to break.  Playing to old blues records, he 
+        honed his skill.  Working at his father's crawdad farm, he 
+        scrimped and saved to by a proper drum kit.  Working and 
+        practicing, practicing and working, he became a drumming force 
+        to be reckoned with and saved enough money to relocate to 
+        Nashville, TN.  With $357.87 in his pocket and a dream in his 
+        heart, he set out on a journey that would forever change his life. 
+        By pure chance, or providence, he bumped into 3 other musicians 
+        at a coffee house also with a dream.  Striking up a conversation 
+        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Marshall.jpg"
     },
 ];
@@ -94,7 +143,7 @@ const bandMemberStringBuilder = () => {
 	for(let i=0; i<bandMembers.length; i++) { 
     newString += `<div class = "bandmem">`;
     newString +=    `<div class = "bandmem-img">`;
-    newString +=	    `<img src="${bandMembers[i].img}"></img>`;
+    newString +=        `<img src="${bandMembers[i].img}"></img>`;
     newString +=    `</div>`;
     newString +=    `<div class = "bandmem-bio">`;
     newString +=	    `<h3>${bandMembers[i].name}</h3>`;
@@ -107,8 +156,6 @@ const bandMemberStringBuilder = () => {
 };
 bandMemberStringBuilder();
 // End Band Bios
-
-// printToDom('band-name', 'Print to Dom function works');
 
 // TOUR PAGE ARRAY
 let tourDates = [
@@ -200,9 +247,6 @@ const tourStringBuilder = () => {
 
 tourStringBuilder();
 
-
-
-//biographyStringBuilder();
 
 // Start discography object
 const discography = [
