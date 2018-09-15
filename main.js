@@ -41,7 +41,7 @@ const printToDom = (stringToPrint, divId) => {
     if (selectedDiv !==null) {
     selectedDiv.innerHTML = stringToPrint;
     }
-};
+ };
 
 const biographyStringBuilder = () => {
     let newString = '';
@@ -59,6 +59,52 @@ const biographyStringBuilder = () => {
 };
 
 biographyStringBuilder();
+
+
+// Begin Band Bios
+const bandMembers = [
+    {
+        name: "Dylan",
+        instrument: "Blues Harp / Scat Vocals",
+        bio: "xxxxxx",
+        img: "./pics/Dylan.jpg"
+    },
+    {
+        name: "Colin",
+        instrument: "Drum Kit",
+        bio: "xxxxxx",
+        img: "./pics/Colin.jpg"
+    },
+    {
+        name: "Charles",
+        instrument: "Bass",
+        bio: "xxxxxx",
+        img: "./pics/Charles.jpg"
+    },
+    {
+        name: "Marshall",
+        instrument: "Saxaphone",
+        bio: "xxxxxx",
+        img: "./pics/Marshall.jpg"
+    },
+];
+
+const bandMemberStringBuilder = () => {
+	let newString = '';
+	for(let i=0; i<bandMembers.length; i++) { 
+    newString += `<div class = "band-members">`;
+    newString +=	`<img src="${bandMembers[i].img}"></img>`;
+    newString +=	`<h3>${bandMembers[i].name}</h3>`;
+    newString +=    `<h4>${bandMembers[i].instrument}</h4>`;
+    newString +=	`<p>${bandMembers[i].bio}</p>`;
+    newString += `</div>`; 
+}	
+	printToDom(newString, "band-members");
+};
+bandMemberStringBuilder();
+// End Band Bios
+
+// printToDom('band-name', 'Print to Dom function works');
 
 // TOUR PAGE ARRAY
 let tourDates = [
@@ -149,6 +195,10 @@ const tourStringBuilder = () => {
 };
 
 tourStringBuilder();
+
+
+
+//biographyStringBuilder();
 
 // Start discography object
 const discography = [
