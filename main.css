@@ -115,42 +115,30 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/* .songs-list {
+.band-albums img{
+    height: 300px;
+    width: 300px;
+}
+
+.band-albums {
     display: flex;
-    max-height: 0;
-    flex-direction: column;
-    opacity: 0;
-    transition: max-height, opacity 0.5s ease-out;
-    transition: opacity 0.5s ease-out;
-} */
+}
 
-/* .band-albums:hover .songs-list {
-    max-height: 500px;
+.disc-text-content {
+    margin: 0 0 0 50px;
+    width: 500px;
+}
+
+.band-albums:hover .songs-list li {
+    visibility: visible;
+    height: 20px;
     opacity: 1;
-    transition: max-height, opacity 1s ease-in;
-    transition: opacity 0.5s ease-out;
-} */
+    transition: height 1s, opacity 1s ease-in;
+}
 
-.songs-list { 
-    visibility: hidden; /* hides sub-menu */
+.songs-list li {
+    visibility: collapse;
+    height: 0;
     opacity: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-2em);
-    z-index: -1;
-    transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
-  }
-  
-  .disc-text-content:hover .songs-list {
-    visibility: visible; /* shows sub-menu */
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    transition-delay: 0s, 0s, 0.3s; /* this removes the transition delay so the menu will be visible while the other styles transition */
-  }
-
-  .disc-text-content {
-      position: relative;
-  }
+    transition: height 1s, opacity 1s ease-in;
+}
