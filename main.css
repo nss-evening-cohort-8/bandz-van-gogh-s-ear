@@ -10,7 +10,7 @@ body {
 
 #main-content {
     background-image: url('pics/skyline.png');
-    height: 1300px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -109,7 +109,7 @@ body {
     width: 100%;
     background-color: #264d76;
     color: #cfe9f6;
-    text-align: center;
+    /* text-align: center; */
     height: 45px;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -127,26 +127,30 @@ body {
 .disc-text-content {
     margin: 0 0 0 50px;
     width: 500px;
+    position: relative;
 }
 
 
-.band-albums .songs-list li {
+ol {
     visibility: collapse;
+    /* display: none; */
     height: 0;
     opacity: 0;
-    /* transition: height 1s, opacity 1s ease-out; */
-    transition: height 1s, opacity 1s ease-out;
-    -webkit-transition: height 1s, opacity 1s ease-out;
-    -moz-transition: height 1s, opacity 1s ease-out;
-    -o-transition: height 1s, opacity 1s ease-out;
 }
 
-.band-albums:target .songs-list li {
+ol:target {
     visibility: visible;
-    height: 20px;
-    opacity: 1;
     transition: height 1s, opacity 1s ease-out;
     -webkit-transition: height 1s, opacity 1s ease-out;
     -moz-transition: height 1s, opacity 1s ease-out;
     -o-transition: height 1s, opacity 1s ease-out;
+    /* display: block; */
+    height: 20px;
+    opacity: 1;
+}
+
+.disc-text-content button {
+    right: 0;
+    top: 12px;
+    position: absolute;
 }
