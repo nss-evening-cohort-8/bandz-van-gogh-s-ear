@@ -338,7 +338,7 @@ const discoBuilder = () => {
             newString += `          <li>${discography[i].songs[j]}</li>`;
         }
         newString += `      </ol>`;
-        newString += `      <button></button>`
+        newString += `      <button class="d-button"></button>`
         newString += `  </div>`
         newString += `</div>`;
     }
