@@ -235,7 +235,7 @@ const discography = [
         ]
     },
     {
-        art: 'https://www.getdigital.eu/web/getdigital/gfx/products/__generated__resized/1100x1100/helloworld_poster.jpg',
+        art: 'https://i.redd.it/ezr1upzdhmjz.jpg',
         albums: 'Hello World',
         songs: [
             'Int Main ()',
@@ -272,11 +272,12 @@ const discoArrKeys = Object.keys(discography[0]);
 
 const discoBuilder = () => {
     let newString= ``;
+    newString += `<h1 class="disc-title">Discography</h1>`
     //Loops through each album object in the total array
     for (i = 0; i < discography.length; i++) {
         newString += `<div class="band-albums">`;
         newString += `  <img src="${discography[i].art}"></img>`;
-        newString += `  <div class="disc-text-content"`
+        newString += `  <div class="disc-text-content">`
         newString += `      <h3 class="album-title">${discography[i].albums}</h3>`;
         newString += `      <ol class="songs-list" id="${discography[i].songs[1]}">`;
         //Loops through each song within an album's song array
@@ -284,6 +285,7 @@ const discoBuilder = () => {
             newString += `          <li>${discography[i].songs[j]}</li>`;
         }
         newString += `      </ol>`;
+        newString += `      <button></button>`
         newString += `  </div>`
         newString += `</div>`;
     }
@@ -291,3 +293,34 @@ const discoBuilder = () => {
 }
 
 discoBuilder();
+
+
+//test function
+
+const newFunct = (id) => {
+    let invisible = 'songs-list';
+    let visible = 'transition';
+    let newClass = id.className;
+    if (newClass === invisible) {
+        newClass = visible;
+    } else if (newClass == visible) {
+        newClass = invisible;
+    }
+    id.className = newClass;
+    console.log('functioning');
+}
+
+let olSelector = [document.getElementById('The Decipherment Of Linear B'), document.getElementById('Alt + Ctrl + Delete'), document.getElementById('Broadway Women'), document.getElementById('Give Me Ramen or Give Me Death')];
+let buttonSelector = [olSelector[0].parentNode.childNodes[5],olSelector[1].parentNode.childNodes[5],olSelector[2].parentNode.childNodes[5],olSelector[3].parentNode.childNodes[5]];
+buttonSelector[0].addEventListener('click', function(){
+    newFunct(olSelector[0]);
+})
+buttonSelector[1].addEventListener('click', function(){
+    newFunct(olSelector[1]);
+})
+buttonSelector[2].addEventListener('click', function(){
+    newFunct(olSelector[2]);
+})
+buttonSelector[3].addEventListener('click', function(){
+    newFunct(olSelector[3]);
+})

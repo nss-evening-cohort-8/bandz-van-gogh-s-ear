@@ -122,6 +122,8 @@ body {
 
 .band-albums {
     display: flex;
+    justify-content: center;
+    margin: 10px 0;
 }
 
 .disc-text-content {
@@ -131,26 +133,47 @@ body {
 }
 
 
-ol {
+.songs-list {
     visibility: collapse;
     /* display: none; */
     height: 0;
     opacity: 0;
+    transition: height 1s, opacity 1s ease-out;
 }
 
-ol:target {
+.transition{
     visibility: visible;
     transition: height 1s, opacity 1s ease-out;
-    -webkit-transition: height 1s, opacity 1s ease-out;
-    -moz-transition: height 1s, opacity 1s ease-out;
-    -o-transition: height 1s, opacity 1s ease-out;
-    /* display: block; */
     height: 20px;
     opacity: 1;
 }
 
+.transition + button {
+    transform: rotate(-90deg);
+}
+
 .disc-text-content button {
     right: 0;
-    top: 12px;
+    top: -12px;
     position: absolute;
+}
+
+button {
+    background-image: url(http://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c44d.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    transform: rotate(90deg);
+}
+
+.disc-title {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: bolder;
 }
