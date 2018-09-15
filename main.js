@@ -92,11 +92,15 @@ const bandMembers = [
 const bandMemberStringBuilder = () => {
 	let newString = '';
 	for(let i=0; i<bandMembers.length; i++) { 
-    newString += `<div class = "band-members">`;
-    newString +=	`<img src="${bandMembers[i].img}"></img>`;
-    newString +=	`<h3>${bandMembers[i].name}</h3>`;
-    newString +=    `<h4>${bandMembers[i].instrument}</h4>`;
-    newString +=	`<p>${bandMembers[i].bio}</p>`;
+    newString += `<div class = "bandmem">`;
+    newString +=    `<div class = "bandmem-img">`;
+    newString +=	    `<img src="${bandMembers[i].img}"></img>`;
+    newString +=    `</div>`;
+    newString +=    `<div class = "bandmem-bio">`;
+    newString +=	    `<h3>${bandMembers[i].name}</h3>`;
+    newString +=        `<h4>${bandMembers[i].instrument}</h4>`;
+    newString +=	    `<p>${bandMembers[i].bio}</p>`;
+    newString +=    `</div>`;
     newString += `</div>`; 
 }	
 	printToDom(newString, "band-members");
