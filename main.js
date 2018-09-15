@@ -215,7 +215,7 @@ const discography = [
                 'Ode to Elizabeth Sanger',
                 'Nuggetizer3',
                 'All The Things You Know',
-                'No Exit Condition'
+                'Reboot'
             ]
     },
     {
@@ -226,12 +226,12 @@ const discography = [
                 'Alt + Ctrl + Delete',
                 'No End In Sight',
                 'For Loop Jam',
+                'No Exit Condition',
                 'Falling Into Infinity',
                 'The Void',
                 'Darkness Becomes Me',
-                'Reboot',
                 'For Loop Jam - Live version',
-                'The Void - Live version'
+                'The Void - Live version',
         ]
     },
     {

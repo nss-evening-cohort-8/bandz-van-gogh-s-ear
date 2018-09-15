@@ -99,6 +99,7 @@ body {
 
 .footer-holder {
     position: relative;
+    height: 45px;
 }
 
 .footer {
@@ -165,7 +166,7 @@ button {
 .band-albums {
     display: flex;
     justify-content: center;
-    margin: 10px 0;
+    margin: 75px 0;
 }
 
 .disc-text-content {
@@ -176,6 +177,7 @@ button {
 
 
 .songs-list {
+    position: relative;
     visibility: collapse;
     /* display: none; */
     height: 0;
@@ -183,11 +185,23 @@ button {
     transition: height 1s, opacity 1s ease-out;
 }
 
+
 .transition{
+    position: relative;
     visibility: visible;
     transition: height 1s, opacity 1s ease-out;
     height: 20px;
     opacity: 1;
+}
+
+.transition li:first-of-type {
+    margin-top: 15px;
+}
+
+.transition li{
+    position: absolute;
+    left: 0;
+    margin-bottom: 15px;
 }
 
 .transition + button {
