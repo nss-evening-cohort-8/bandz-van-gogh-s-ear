@@ -241,7 +241,7 @@ const tourStringBuilder = () => {
         newString += `<div class="tour-div">${tourDates[i].date}</div>`;
         newString += `<div class="tour-div">${tourDates[i].location}</div>`;
         newString += `<div class="tour-div">${tourDates[i].venue}</div>`;
-        newString += `<a class="tour-div" href="${tourDates[i].tickets}" target="_blank"><button>TICKETS</button></a>`;
+        newString += `<a class="tour-div" href="${tourDates[i].tickets}" target="_blank"><button class="cw-button">TICKETS</button></a>`;
         newString += `</div>`;
     }
     printToDom(newString, 'tour-dates');
@@ -338,7 +338,7 @@ const discoBuilder = () => {
             newString += `          <li>${discography[i].songs[j]}</li>`;
         }
         newString += `      </ol>`;
-        newString += `      <button></button>`
+        newString += `      <button class="d-button"></button>`
         newString += `  </div>`
         newString += `</div>`;
     }

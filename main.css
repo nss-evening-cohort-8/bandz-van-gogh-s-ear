@@ -179,15 +179,15 @@ body {
     justify-content: space-between;   
 }
 
-button {
+.cw-button {
     border: solid black 1px;
 }
 
-.tour-container a:hover button {
+.tour-container a:hover .cw-button {
     background-color: #CFE9F6;
 }
 
-button {
+.cw-button {
     padding: 15px 30px;
     color: black;
     font-size: 15px;
@@ -254,17 +254,17 @@ button {
     
 }
 
-.transition + button {
+.transition + .d-button {
     transform: rotate(-90deg);
 }
 
-.disc-text-content button {
+.disc-text-content .d-button {
     right: 0;
     top: -12px;
     position: absolute;
 }
 
-button {
+.d-button {
     background-image: url(http://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c44d.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
