@@ -237,21 +237,21 @@ button {
 
 
 .transition{
-    position: relative;
     visibility: visible;
     transition: height 1s, opacity 1s ease-out;
     height: 20px;
     opacity: 1;
+    position: absolute;
+    left: -25px;
+    margin-bottom: 15px;
 }
 
 .transition li:first-of-type {
     margin-top: 15px;
 }
 
-.transition li{
-    position: absolute;
-    left: 0;
-    margin-bottom: 15px;
+.transition {
+    
 }
 
 .transition + button {
