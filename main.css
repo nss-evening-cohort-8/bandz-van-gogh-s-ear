@@ -115,6 +115,48 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* TOUR PAGE STYLING START */
+
+.tour-h1 {
+    margin: 15px 0px 20px 35px;
+}
+
+.tour-container {
+    padding: 0px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+button {
+    border: solid black 1px;
+}
+
+.tour-container a:hover button {
+    background-color: #CFE9F6;
+}
+
+button {
+    padding: 15px 30px;
+    color: black;
+    font-size: 15px;
+    font-style: bold;
+}
+
+.tour-div {
+    flex: 1;
+    border-top: solid white 1px;
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+
+  .tour-container div:hover {
+      color: white;
+  }
+
+/* TOUR PAGE STYLING END */
+
+/* Discography styling */
 .band-albums img{
     height: 300px;
     width: 300px;
