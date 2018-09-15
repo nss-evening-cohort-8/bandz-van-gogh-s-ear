@@ -127,15 +127,15 @@ body {
     justify-content: space-between;   
 }
 
-button {
+.cw-button {
     border: solid black 1px;
 }
 
-.tour-container a:hover button {
+.tour-container a:hover .cw-button {
     background-color: #CFE9F6;
 }
 
-button {
+.cw-button {
     padding: 15px 30px;
     color: black;
     font-size: 15px;
