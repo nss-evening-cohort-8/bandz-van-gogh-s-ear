@@ -10,7 +10,7 @@ body {
 
 #main-content {
     background-image: url('pics/skyline.png');
-    height: 1300px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -97,16 +97,20 @@ body {
     color: #718daa;
 }
 
+.footer-holder {
+    position: relative;
+    height: 45px;
+}
+
 .footer {
     display: flex;
-    position: fixed;
+    position: absolute;
     justify-content: space-evenly;
-    left: 0;
     bottom: 0;
     width: 100%;
     background-color: #264d76;
     color: #cfe9f6;
-    text-align: center;
+    /* text-align: center; */
     height: 45px;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -200,3 +204,78 @@ button {
   .tour-container div:hover {
       color: white;
   }
+
+/* TOUR PAGE STYLING END */
+
+/* Discography styling */
+.band-albums img{
+    height: 300px;
+    width: 300px;
+}
+
+.band-albums {
+    display: flex;
+    justify-content: center;
+    margin: 75px 0;
+}
+
+.disc-text-content {
+    margin: 0 0 0 50px;
+    width: 500px;
+    position: relative;
+}
+
+
+.songs-list {
+    position: relative;
+    visibility: collapse;
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    transition: height 1s, opacity 1s ease-out;
+}
+
+
+.transition{
+    visibility: visible;
+    transition: height 1s, opacity 1s ease-out;
+    height: 20px;
+    opacity: 1;
+    position: absolute;
+    left: -25px;
+    margin-bottom: 15px;
+}
+
+.transition li:first-of-type {
+    margin-top: 15px;
+}
+
+.transition + button {
+    transform: rotate(-90deg);
+}
+
+.disc-text-content button {
+    right: 0;
+    top: -12px;
+    position: absolute;
+}
+
+button {
+    background-image: url(http://www.stickpng.com/assets/thumbs/580b57fcd9996e24bc43c44d.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    height: 50px;
+    width: 50px;
+    outline: none;
+    transform: rotate(90deg);
+}
+
+.disc-title {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-weight: bolder;
+}
