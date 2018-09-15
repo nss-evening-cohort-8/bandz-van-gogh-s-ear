@@ -41,7 +41,7 @@ const printToDom = (stringToPrint, divId) => {
     if (selectedDiv !==null) {
     selectedDiv.innerHTML = stringToPrint;
     }
-};
+ };
 
 const biographyStringBuilder = () => {
     let newString = '';
@@ -62,12 +62,33 @@ biographyStringBuilder();
 
 
 // Begin Band Bios
-const bandMembers = [{
-	name: ["Dylan", "Colin", "Charles", "Marshall"],
-	instrument: ["Blues Harp", "Drum Kit", "Bass", "Saxaphone"],
-	bio: ["<p>Dylan Bio.llkjjfj kjf lkdjf jlkjf slkj fslkjf lkjd fslkj lksjf</p>", "<p>Colin Bio lkjlksjdflklkjlkjlkdlkjsdlkfj </p>", "<p>Charles Bio lkjlk  flksj lj f lkfj slkjslf lkjdf ls </p>", "<p>Marshall Bio llksdjf lksd  jflkd lsdfj asj alfj foiidfj d  jaslkdfj sadjf lsdkj flasdk </p>"],
-	img: ["pics/Dylan.jpg", "pics/Colin.jpg", "pics/Charles.jpg", "pics/Marshall.jpg"]
-}];
+const bandMembers = [
+    {
+        name: "Dylan",
+        instrument: "Blues Harp / Scat Vocals",
+        bio: "xxxxxx",
+        img: "./pics/Dylan.jpg"
+    },
+    {
+        name: "Colin",
+        instrument: "Drum Kit",
+        bio: "xxxxxx",
+        img: "./pics/Colin.jpg"
+    },
+    {
+        name: "Charles",
+        instrument: "Bass",
+        bio: "xxxxxx",
+        img: "./pics/Charles.jpg"
+    },
+    {
+        name: "Marshall",
+        instrument: "Saxaphone",
+        bio: "xxxxxx",
+        img: "./pics/Marshall.jpg"
+    },
+];
+
 const bandMemberStringBuilder = () => {
 	let newString = '';
 	for(let i=0; i<bandMembers.length; i++) { 
