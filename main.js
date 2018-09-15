@@ -129,9 +129,9 @@ let tourDates = [
     {
         festival: 'Montreux Jazz Festival',                
         date: 'June 29 2019',
-        location: 'Jersey City',
+        location: 'Montreux, Switzerland',
         venue: 'Montreux Jazz Lab',
-        tickets: 'https://www.montreuxjazzfestival.com/en/programl'
+        tickets: 'https://www.montreuxjazzfestival.com/en/program'
     },
     {
         festival: 'Django Reinhardt Festival',                
@@ -150,14 +150,14 @@ let tourDates = [
     {
         festival: 'Love Supreme Jazz Festival',                
         date: 'July 7 2019',
-        location: 'Glynde Place, Glynde, United Kingdom',
+        location: 'Glynde Place, United Kingdom',
         venue: 'Main Stage',
         tickets: 'https://lovesupremefestival.com/tickets#YPPIf0I2RcbOXsdY.97'
     },
     {
         festival: 'North Sea Jazz Festival',                
         date: 'July 13 2019',
-        location: 'Ahoy Rotterdam, Rotterdam, Netherlands',
+        location: 'Ahoy Rotterdam, Netherlands',
         venue: 'Ahoy Venue',
         tickets: 'https://www.northseajazz.com/en/tickets/tickets-2019/'
     },
@@ -188,11 +188,11 @@ const tourStringBuilder = () => {
     let newString = '';
     for (let i = 0; i < tourDates.length; i++) {
         newString += `<div class="tour-container">`;
-        newString += `<h1>${tourDates[i].festival}</h1>`;
-        newString += `<h2>${tourDates[i].date}</h2>`;
-        newString += `<h2>${tourDates[i].location}</h2>`;
-        newString += `<h3>${tourDates[i].venue}</h3>`;
-        newString += `<a href="${tourDates[i].tickets}" target="_blank"><button>Tickets</button></a>`;
+        newString += `<div class="tour-div">${tourDates[i].festival}</div>`;
+        newString += `<div class="tour-div">${tourDates[i].date}</div>`;
+        newString += `<div class="tour-div">${tourDates[i].location}</div>`;
+        newString += `<div class="tour-div">${tourDates[i].venue}</div>`;
+        newString += `<a class="tour-div" href="${tourDates[i].tickets}" target="_blank"><button>TICKETS</button></a>`;
         newString += `</div>`;
     }
     printToDom(newString, 'tour-dates');
