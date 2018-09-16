@@ -235,6 +235,13 @@ let tourDates = [
 
 const tourStringBuilder = () => {
     let newString = '';
+    newString += '<div class="tour-header-container">';
+    newString += '<div class="tour-header">FESTIVAL</div>';
+    newString += '<div class="tour-header">DATE</div>';
+    newString += '<div class="tour-header">LOCATION</div>';
+    newString += '<div class="tour-header">VENUE</div>';
+    newString += '<div class="tour-header"></div>';
+    newString += '</div>';
     for (let i = 0; i < tourDates.length; i++) {
         newString += `<div class="tour-container">`;
         newString += `<div class="tour-div">${tourDates[i].festival}</div>`;
