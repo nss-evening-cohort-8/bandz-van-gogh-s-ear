@@ -36,7 +36,6 @@ body {
     padding: 10px;
     background-color: #cfe9f6;
     color: #040404;
-    height: 700px;
     margin: 0 auto;
 }
 
@@ -170,6 +169,9 @@ body {
 
 .tour-h1 {
     margin: 15px 0px 20px 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .tour-container {
@@ -177,10 +179,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;   
-}
-
-.cw-button {
-    border: solid black 1px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .tour-container a:hover .cw-button {
@@ -188,10 +187,12 @@ body {
 }
 
 .cw-button {
+    border: solid black 1px;
     padding: 15px 30px;
     color: black;
     font-size: 15px;
     font-style: bold;
+    font-family: 'Roboto', sans-serif;
 }
 
 .tour-div {
@@ -199,10 +200,27 @@ body {
     border-top: solid white 1px;
     padding-top: 18px;
     padding-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
   }
 
   .tour-container div:hover {
       color: white;
+  }
+
+  .tour-header-container {
+    padding: 0px 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .tour-header {
+    flex: 1;
+    padding-bottom: 20px;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
   }
 
 /* TOUR PAGE STYLING END */
@@ -279,3 +297,5 @@ body {
     text-align: center;
     font-weight: bolder;
 }
+
+/* end disco styling */
