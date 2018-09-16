@@ -79,7 +79,7 @@ const bandMembers = [
         heart, he set out on a journey that would forever change his life. 
         By pure chance, or providence, he bumped into 3 other musicians 
         at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        with Dylan, Charles and Marshall, they formed a bond and a band 
         that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Dylan.jpg"
     },
@@ -99,7 +99,7 @@ const bandMembers = [
         heart, he set out on a journey that would forever change his life. 
         By pure chance, or providence, he bumped into 3 other musicians 
         at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        with Dylan, Charles and Marshall, they formed a bond and a band 
         that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Colin.jpg"
     },
@@ -132,7 +132,7 @@ const bandMembers = [
         heart, he set out on a journey that would forever change his life. 
         By pure chance, or providence, he bumped into 3 other musicians 
         at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        with Dylan, Charles and Marshall, they formed a bond and a band 
         that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Marshall.jpg"
     },
