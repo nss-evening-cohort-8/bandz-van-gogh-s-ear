@@ -171,6 +171,8 @@ body {
 .tour-h1 {
     margin: 15px 0px 20px 35px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-weight: bolder;
 }
 
 .tour-container {
