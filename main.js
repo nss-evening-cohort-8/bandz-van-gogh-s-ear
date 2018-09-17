@@ -2,7 +2,7 @@
 const vanGoghsEar = [{
     name: "Van Gogh's Ear",
     type: "Nashville Jazz Collective",
-    image: "https://onerecordperday.files.wordpress.com/2013/02/day48-plot.jpg",
+    image:  "./pics/vge.jpg",
     biography:
     `To describe Van Gogh’s Ear as simply a jazz group would be to commit 
     an egregious disservice to what VGE actually is. Less a band and more 
@@ -66,21 +66,18 @@ const bandMembers = [
     {
         name: "Dylan",
         instrument: "Blues Harp / Scat Vocals",
-        bio: `Colin, hails from LA no not Los Angeles, but Louisiana.  
-        Raised on Mississippi Delta Blues, and Dixie Land Jazz he had 
-        a deep longing to express himself through music.  At age 5, his 
-        parents bought him his first drum kit from Sears & Roebuck that 
-        was guaranteed not to break.  Playing to old blues records, he 
-        honed his skill.  Working at his father's crawdad farm, he 
-        scrimped and saved to by a proper drum kit.  Working and 
-        practicing, practicing and working, he became a drumming force 
-        to be reckoned with and saved enough money to relocate to 
-        Nashville, TN.  With $357.87 in his pocket and a dream in his 
-        heart, he set out on a journey that would forever change his life. 
-        By pure chance, or providence, he bumped into 3 other musicians 
-        at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
-        that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
+        bio: `Dylan Murry, known as Dangerous Dylan, is an American 
+        blues living-legend, scat singer, and songwriter. His 
+        revolutionary approach to the harmonica and continuing 
+        impact on succeeding generations has earned comparisons for 
+        him to such seminal artists as Django Reinhardt, Charlie 
+        Parker and Jimi Hendrix. His virtuosity and musical 
+        innovations fundamentally altered many listeners' 
+        expectations of what was possible on blues harmonica. He was 
+        inducted into The Rock and Roll Hall of Fame in 2008 in the 
+        category Frontman, the only artist to be inducted specifically 
+        as a harmonica player. He co-founded Van Gogh's Ear and has 
+        never looked back.`,
         img: "./pics/Dylan.jpg"
     },
     {
@@ -99,7 +96,7 @@ const bandMembers = [
         heart, he set out on a journey that would forever change his life. 
         By pure chance, or providence, he bumped into 3 other musicians 
         at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
+        with Dylan, Charles and Marshall, they formed a bond and a band 
         that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
         img: "./pics/Colin.jpg"
     },
@@ -112,28 +109,14 @@ const bandMembers = [
         field of kymatology, the study of waves. Having built a 
         reputation for himself in the science community, he now endeavors 
         to win a third Nobel Peace Prize, but this time for song-writing. 
-        And so Charles found 3 likeminded individuals to help spearhead the 
+        And so Charles found 3 like-minded individuals to help spearhead the 
         musical experience that is Van Gogh’s Ear.`,
         img: "./pics/Charles.jpg"
     },
     {
         name: "Marshall",
         instrument: "Saxophone",
-        bio: `Colin, hails from LA no not Los Angeles, but Louisiana.  
-        Raised on Mississippi Delta Blues, and Dixie Land Jazz he had 
-        a deep longing to express himself through music.  At age 5, his 
-        parents bought him his first drum kit from Sears & Roebuck that 
-        was guaranteed not to break.  Playing to old blues records, he 
-        honed his skill.  Working at his father's crawdad farm, he 
-        scrimped and saved to by a proper drum kit.  Working and 
-        practicing, practicing and working, he became a drumming force 
-        to be reckoned with and saved enough money to relocate to 
-        Nashville, TN.  With $357.87 in his pocket and a dream in his 
-        heart, he set out on a journey that would forever change his life. 
-        By pure chance, or providence, he bumped into 3 other musicians 
-        at a coffee house also with a dream.  Striking up a conversation 
-        with Dylyan, Charles and Marshall, they formed a bond and a band 
-        that would forever change the Jazz world.  Welcome to Van Gogh's Ear.`,
+        bio: `The Sax Player.`,
         img: "./pics/Marshall.jpg"
     },
 ];
@@ -156,8 +139,6 @@ const bandMemberStringBuilder = () => {
 };
 bandMemberStringBuilder();
 // End Band Bios
-
-// printToDom('band-name', 'Print to Dom function works');
 
 // TOUR PAGE ARRAY
 let tourDates = [
@@ -235,6 +216,13 @@ let tourDates = [
 
 const tourStringBuilder = () => {
     let newString = '';
+    newString += '<div class="tour-header-container">';
+    newString += '<div class="tour-header">FESTIVAL</div>';
+    newString += '<div class="tour-header">DATE</div>';
+    newString += '<div class="tour-header">LOCATION</div>';
+    newString += '<div class="tour-header">VENUE</div>';
+    newString += '<div class="tour-header"></div>';
+    newString += '</div>';
     for (let i = 0; i < tourDates.length; i++) {
         newString += `<div class="tour-container">`;
         newString += `<div class="tour-div">${tourDates[i].festival}</div>`;
@@ -249,9 +237,6 @@ const tourStringBuilder = () => {
 
 tourStringBuilder();
 
-
-
-//biographyStringBuilder();
 
 // Start discography object
 const discography = [
