@@ -21,4 +21,4 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-* Click around on the website to learn more about our band.
+* Click around on the site to learn more about Van Gogh's Ear.
