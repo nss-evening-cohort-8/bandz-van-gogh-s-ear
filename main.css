@@ -272,6 +272,7 @@ body {
 
 .transition + .d-button {
     transform: rotate(-90deg);
+    transition: transform .75s ease-out;
 }
 
 .disc-text-content .d-button {
@@ -292,6 +293,7 @@ body {
     width: 50px;
     outline: none;
     transform: rotate(90deg);
+    transition: transform .75s ease-out;
 }
 
 .disc-title {

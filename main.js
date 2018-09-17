@@ -349,16 +349,18 @@ const newFunct = (id) => {
 }
 
 const olSelector = [document.getElementById('The Decipherment Of Linear B'), document.getElementById('Alt + Ctrl + Delete'), document.getElementById('Broadway Women'), document.getElementById('Give Me Ramen or Give Me Death')];
-const buttonSelector = [olSelector[0].parentNode.childNodes[5],olSelector[1].parentNode.childNodes[5],olSelector[2].parentNode.childNodes[5],olSelector[3].parentNode.childNodes[5]];
-buttonSelector[0].addEventListener('click', function(){
-    newFunct(olSelector[0]);
-})
-buttonSelector[1].addEventListener('click', function(){
-    newFunct(olSelector[1]);
-})
-buttonSelector[2].addEventListener('click', function(){
-    newFunct(olSelector[2]);
-})
-buttonSelector[3].addEventListener('click', function(){
-    newFunct(olSelector[3]);
-})
+const buttonSelector = [olSelector[0].parentNode.childNodes[5],olSelector[1].parentNode.childNodes[5],olSelector[2].parentNode.childNodes[5],olSelector[3].parentNode.childNodes[5]] || undefined;
+if (buttonSelector !== null) {
+    buttonSelector[0].addEventListener('click', function(){
+        newFunct(olSelector[0]);
+    })
+    buttonSelector[1].addEventListener('click', function(){
+        newFunct(olSelector[1]);
+    })
+    buttonSelector[2].addEventListener('click', function(){
+        newFunct(olSelector[2]);
+    })
+    buttonSelector[3].addEventListener('click', function(){
+        newFunct(olSelector[3]);
+    })
+}
