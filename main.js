@@ -124,7 +124,7 @@ const bandMembers = [
         prostate, but none of this could keep him away from jazz. As a urologist, 
         most people don't believe in their more artsy side. They couldn't be more 
         wrong. He picked up jazz as any other human would, by buying a saxophone 
-        and playing his heart. Once he met up with the rest of "the ear", he knew 
+        and playing his heart out. Once he met up with the rest of "the ear", he knew 
         he found a home. His other personal interests include cycling, travel, 
         singing, and skiing. He is married and has four children.`,
         img: "./pics/Marshall.jpg"
