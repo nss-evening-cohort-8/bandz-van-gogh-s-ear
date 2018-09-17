@@ -116,7 +116,17 @@ const bandMembers = [
     {
         name: "Marshall",
         instrument: "Saxophone",
-        bio: `The Sax Player.`,
+        bio: `Marshall Offutt completed his degree in medicine from the 
+        Medical College of Ohio. He performed research at Yale University 
+        School of Medicine. He served his urology residency at Case Western 
+        Reserve University. Dr. Offutt has research experience and publication 
+        credits in the field of lead poisoning, and laser vaporization of the 
+        prostate, but none of this could keep him away from jazz. As a urologist, 
+        most people don't believe in their more artsy side. They couldn't be more 
+        wrong. He picked up jazz as any other human would, by buying a saxophone 
+        and playing his heart. Once he met up with the rest of "the ear", he knew 
+        he found a home. His other personal interests include cycling, travel, 
+        singing, and skiing. He is married and has four children.`,
         img: "./pics/Marshall.jpg"
     },
 ];
