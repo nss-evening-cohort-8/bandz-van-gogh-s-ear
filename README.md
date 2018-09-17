@@ -3,8 +3,9 @@ A website for Van Gogh's Ear, a fictional jazz band from Nashville, TN. As a tea
 
 ## Screenshots
 ![main screen shot](./screenshots/home.png)
-![second screen shot](./screenshots/band.png)
-![third screen shot](./screenshots/disc.png)
+![second screen shot](./screenshots/home2.png)
+![third screen shot](./screenshots/band.png)
+![fourth screen shot](./screenshots/disc.png)
 ![final screen shot](./screenshots/tour.png)
 
 ## How to run this project
@@ -20,4 +21,4 @@ hs -p 9999
 ```
 localhost: 9999
 ```
-* Click around on the website to learn more about our band.
+* Click around on the site to learn more about Van Gogh's Ear.

@@ -36,7 +36,6 @@ body {
     padding: 10px;
     background-color: #cfe9f6;
     color: #040404;
-    height: 700px;
     margin: 0 auto;
 }
 
@@ -46,7 +45,8 @@ body {
 }
 
 .band-photo {
-    width: 600px;
+    max-width: 600px;
+    min-width: 600px;
     padding-top: 40px;
     padding-bottom: 30px;
     height: 500px;
@@ -247,7 +247,6 @@ body {
     position: relative;
 }
 
-
 .songs-list {
     position: relative;
     visibility: collapse;
@@ -256,7 +255,6 @@ body {
     opacity: 0;
     transition: height 1s, opacity 1s ease-out;
 }
-
 
 .transition{
     visibility: visible;

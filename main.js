@@ -140,8 +140,6 @@ const bandMemberStringBuilder = () => {
 bandMemberStringBuilder();
 // End Band Bios
 
-// printToDom('band-name', 'Print to Dom function works');
-
 // TOUR PAGE ARRAY
 let tourDates = [
     {
@@ -239,9 +237,6 @@ const tourStringBuilder = () => {
 
 tourStringBuilder();
 
-
-
-//biographyStringBuilder();
 
 // Start discography object
 const discography = [
