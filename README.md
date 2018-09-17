@@ -22,7 +22,3 @@ hs -p 9999
 localhost: 9999
 ```
 * Click around on the website to learn more about our band.
-<<<<<<< HEAD
-
-=======
->>>>>>> master
